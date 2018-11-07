@@ -1,6 +1,6 @@
 # Engineering methodology
 
-Date: 2018-01-15
+Date: 2018-11-07
 
 * [Intro](#intro)
 * [OKRs](#okrs)
@@ -21,33 +21,56 @@ Date: 2018-01-15
 
 ## Intro
 
-These are the notes from:
+This methodology it's a evolution of [previous workflows](https://github.com/src-d/guide/blob/abe7932e3bc58898e49a5c1c0e3e2cac6d387144/engineering/methodology.md) and experiences, it's on constant eveloution an open to change at any moment.
 
-* 2017-01-09 Scrum of Scrums
-* 2017-01-10/11 Workflow discussions
+The current workflow is based on this main concepts:
 
-Meetings for the Engineering team leads at source{d}.
-It’s the replacement for the [previous workflow](https://github.com/src-d/guide/blob/abe7932e3bc58898e49a5c1c0e3e2cac6d387144/engineering/methodology.md) with SCRUM
+* OKRs, company/team engineering OKRs are what should drive every single decision taken by the Engineering Team.
+* A [Workflow](workflow.md), that defines the process of definition and development of the tasks, from the idea to the release.
+* A Backlog and Fetures-Idea repositories, where the approved tasks and the suggestions are.
+* Leads meeting, a meeting to align all efforts done by the different teams at engineering.
+* Demo, a company-wide presentation where all the new functionality and important changes are communicated to the company once they are done.
 
 ## OKRs
 
-Company publishes OKRs every quarter.
+Every single decision made at the Engineering Team (and company-wide as well),
+should be made aligned with the quartes OKRs.
 
-2018Q1 OKRs in https://github.com/src-d/guide/blob/general/OKRs/README.md
+The company publishes OKRs every quarter at [OKRs](https://github.com/src-d/okrs)
+the OKRs for the current quarter are hosted in the README.md file, the pasts
+quartes can be found by his name in the same repository.
 
-Each team is expected to publish it’s own OKRs, aligned with the company ones.
+The OKRs are introduced and discussed via PRs to a feature branch and
+merged once are reviewed by management.
+
+The Management Team defines the company OKRs and the high lever OKRs,  meanwhile
+the Engineering Team OKRs are determined by the CTO and the Head of
+Architecture, with the help of the rest of the members of the team.
+
+The OKRs per team are defined and published by the Lead of each team, aligned
+with the company ones.
+
 Engineering roles are not expected to have individual objectives.
 
-## The Big Change
+## Backlog and Fetures-Idea repositories
 
-In 2018Q1 SCRUM is replaced by a simpler, company and team-level Kanban boards,
-so that all iterations including planning/work/retrospective do not happen
-synchronously at the same weeks for all the teams.
+At source{d} we try to use git repositories as much, that's why our source
+of true for the user histories and tasks are git repositories at GitHub, even
+these repositories don't contain any code.
 
-Meetings for high-level sync including product direction, vision, etc are
-proactively scheduled by each Team Lead as needed. All Leads have periodical
-hands-on meetings with the CTO.
+The [Fetures-Idea repository](https://github.com/src-d/feature-idea) is the
+place where everyone in the company can suggest new features, projects or
+products to the Product Team/Engineering Team, this is doing creating an [issue](https://github.com/src-d/feature-idea/issues/new/choose) in the repository,
+after the Product Team and CTO will review this at the Product Sync meeting that
+happens once per week.
 
+The [Backlog repository](https://github.com/src-d/backlog) contains the full
+backlog for the Engineering Team and Product Team; this issues are managed by
+the Head of Product and only him can create new issues there. Each issue at this repository represents an EPIC, and this EPIC should be linked to his Design
+Document and his OKR. Every team involved in the development of this EPIC is
+responsible of keeping it updated.
+
+...
 
 ## Kanban
 
@@ -134,6 +157,8 @@ Demo meeting is a monthly event.
 * Product does not need to be deployed, but the demo should be as real as possible.
 * Should be concise, respecting other people's time.
 * Fixed max time **per-team: 15min (including questions)**. Agree between teams in advance, if more time needed.
+
+
 
 ## Keeping track of things
 
